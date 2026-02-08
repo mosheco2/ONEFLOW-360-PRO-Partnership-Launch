@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- WhatsApp & Social Media Preview Tags (Open Graph) -->
+    <meta property="og:title" content="ONEFLOW 360 PRO | נבחרת השותפים 2026">
+    <meta property="og:description" content="הצטרפו כשותפי Business & Tech של עמוד השדרה הדיגיטלי החדש. תכנית תגמולים, בנק שעות הקמה וליווי VIP.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.png">
+    <meta name="description" content="הצטרפו כשותפי Business & Tech של עמוד השדרה הדיגיטלי החדש. תכנית תגמולים, בנק שעות הקמה וליווי VIP.">
+
     <title>ONEFLOW 360 PRO | Business & Technology Partner 2026</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Assistant', sans-serif;
@@ -24,16 +34,16 @@
             box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
         }
         
-        /* Floating / Cruising Animations for Modules */
-        @keyframes cruise-1 { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(25px, -35px); } 66% { transform: translate(-15px, -20px); } }
-        @keyframes cruise-2 { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(-30px, 25px); } 66% { transform: translate(20px, 35px); } }
-        @keyframes cruise-3 { 0%, 100% { transform: translate(0, 0); } 40% { transform: translate(35px, 15px); } 70% { transform: translate(-25px, 30px); } }
-        @keyframes cruise-4 { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-20px, -40px); } 75% { transform: translate(30px, -15px); } }
+        /* Floating / Cruising Animations */
+        @keyframes cruise-1 { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(15px, -20px); } 66% { transform: translate(-10px, -10px); } }
+        @keyframes cruise-2 { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(-20px, 15px); } 66% { transform: translate(10px, 20px); } }
+        @keyframes cruise-3 { 0%, 100% { transform: translate(0, 0); } 40% { transform: translate(20px, 10px); } 70% { transform: translate(-15px, 15px); } }
+        @keyframes cruise-4 { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-10px, -25px); } 75% { transform: translate(15px, -10px); } }
 
-        .float-1 { animation: cruise-1 12s infinite ease-in-out; }
-        .float-2 { animation: cruise-2 14s infinite ease-in-out; }
-        .float-3 { animation: cruise-3 16s infinite ease-in-out; }
-        .float-4 { animation: cruise-4 18s infinite ease-in-out; }
+        .float-1 { animation: cruise-1 10s infinite ease-in-out; }
+        .float-2 { animation: cruise-2 12s infinite ease-in-out; }
+        .float-3 { animation: cruise-3 14s infinite ease-in-out; }
+        .float-4 { animation: cruise-4 16s infinite ease-in-out; }
 
         .gradient-text {
             background: linear-gradient(90deg, #0f172a, #2563eb);
@@ -53,18 +63,30 @@
         
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Responsive adjustments for the floating nodes */
+        @media (max-width: 768px) {
+            .node-text { font-size: 10px; }
+            .node-icon { width: 1.5rem; height: 1.5rem; }
+            .satellite-node { padding: 0.5rem !important; }
+        }
     </style>
 </head>
 <body class="text-slate-900 text-right">
 
-    <!-- Persistent Navigation Bar (Always Visible) -->
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/972504000024?text=שלום, אשמח לקבל פרטים נוספים על תוכנית השותפים של ONEFLOW 360 PRO" target="_blank" class="fixed bottom-6 left-6 z-[110] bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all hover:scale-110 flex items-center gap-2 group">
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 whitespace-nowrap font-bold">דברו איתנו בווצאפ</span>
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <!-- Persistent Navigation Bar -->
     <nav class="fixed top-0 w-full z-[100] glass-morphism">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 text-right">
-            <!-- Row 1: Logo & Main CTA -->
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="h-24 md:h-32 flex items-center justify-between">
                 <div class="flex items-center">
                     <a href="#" class="block transition-transform hover:scale-105">
-                        <img src="logo.png" alt="OneFlow 360 PRO" class="h-20 md:h-28 w-auto object-contain" onerror="this.src='https://placehold.co/500x150?text=ONEFLOW+360+PRO';">
+                        <img src="logo.png" alt="OneFlow 360 PRO" class="h-16 md:h-24 w-auto object-contain" onerror="this.src='https://placehold.co/500x150?text=ONEFLOW+360+PRO';">
                     </a>
                 </div>
                 <div class="flex items-center">
@@ -72,7 +94,6 @@
                 </div>
             </div>
 
-            <!-- Row 2: Sector Quick Access -->
             <div class="flex items-center justify-center border-t border-slate-100 py-3 md:py-4 overflow-x-auto no-scrollbar gap-6 md:gap-12 text-sm md:text-base whitespace-nowrap">
                 <a href="#partner-profile" class="font-bold text-slate-500 hover:text-blue-600 transition-colors flex items-center gap-2">
                     <i data-lucide="user-check" class="w-4 h-4"></i>
@@ -95,7 +116,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-72 pb-24 px-6 relative overflow-hidden bg-white">
+    <section class="pt-72 pb-24 px-6 relative overflow-hidden bg-white text-right">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <div class="relative z-10">
                 <div class="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-black uppercase mb-6">
@@ -110,62 +131,62 @@
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-start">
                     <a href="#join" class="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black text-xl text-center hover:bg-blue-600 transition-all shadow-xl accent-glow text-center">הגשת מועמדות לשותפות 2026</a>
-                    <a href="#opportunity" class="px-10 py-5 bg-white border-2 border-slate-100 text-slate-900 rounded-2xl font-bold text-xl text-center hover:bg-slate-50 transition-all text-center">מה יוצא לי מזה?</a>
+                    <a href="#opportunity" class="px-10 py-5 bg-white border-2 border-slate-100 text-slate-900 rounded-2xl font-bold text-xl text-center hover:bg-slate-50 transition-all text-center text-nowrap">מה יוצא לי מזה?</a>
                 </div>
             </div>
 
-            <!-- Visualization with all 9 Modules -->
-            <div class="relative flex items-center justify-center min-h-[550px] scale-90 md:scale-100">
+            <!-- Cruising Modules Visualization (Mobile Optimized) -->
+            <div class="relative flex items-center justify-center min-h-[450px] md:min-h-[550px] scale-90 md:scale-100">
                 <div class="absolute inset-0 bg-blue-500/5 rounded-full blur-[120px]"></div>
                 
                 <!-- Central CORE -->
-                <div class="relative z-20 w-56 h-56 bg-slate-900 rounded-[3.5rem] shadow-2xl border-4 border-white/20 flex flex-col items-center justify-center p-6 text-center text-white">
+                <div class="relative z-20 w-48 h-48 md:w-56 md:h-56 bg-slate-900 rounded-[3rem] shadow-2xl border-4 border-white/20 flex flex-col items-center justify-center p-6 text-center text-white">
                     <div class="mb-4">
-                        <img src="logo.png" alt="Logo" class="h-14 w-auto object-contain brightness-0 invert opacity-90" onerror="this.style.display='none'">
+                        <img src="logo.png" alt="Logo" class="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-90" onerror="this.style.display='none'">
                     </div>
                     <div class="flex flex-col gap-1">
-                        <span class="font-black text-[12px] text-blue-400 uppercase tracking-widest leading-none">Oneflow 360 PRO</span>
-                        <span class="font-black text-4xl italic tracking-tight uppercase">CORE</span>
+                        <span class="font-black text-[10px] md:text-[12px] text-blue-400 uppercase tracking-widest leading-none">Oneflow 360 PRO</span>
+                        <span class="font-black text-2xl md:text-4xl italic tracking-tight uppercase">CORE</span>
                     </div>
                 </div>
 
-                <!-- 9 Floating Satellite Nodes -->
+                <!-- 9 Floating Satellite Nodes (Optimized spacing for Mobile) -->
                 <div class="absolute inset-0 pointer-events-none">
-                    <div class="absolute top-[2%] right-[12%] float-1 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="shopping-cart" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">הזמנות B2B</span>
+                    <div class="satellite-node absolute top-[5%] right-[15%] md:right-[12%] float-1 bg-white p-2 md:p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="shopping-cart" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">הזמנות B2B</span>
                     </div>
-                    <div class="absolute top-[8%] left-[25%] float-4 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-orange-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">AI ותובנות</span>
+                    <div class="satellite-node absolute top-[10%] left-[20%] md:left-[25%] float-4 bg-white p-2 md:p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-orange-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="sparkles" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">AI ותובנות</span>
                     </div>
-                    <div class="absolute top-[20%] left-[2%] float-3 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="users" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">מכירות סוכנים</span>
+                    <div class="satellite-node absolute top-[25%] left-[0%] md:left-[2%] float-3 bg-white p-2 md:p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="users" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">מכירות סוכנים</span>
                     </div>
-                    <div class="absolute top-[48%] right-[-6%] float-2 bg-white p-3 rounded-2xl shadow-lg border-2 border-blue-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="package" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">מחסן וליקוט</span>
+                    <div class="satellite-node absolute top-[50%] right-[-5%] md:right-[-6%] float-2 bg-white p-2 md:p-3 rounded-2xl shadow-lg border-2 border-blue-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-blue-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="package" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">מחסן וליקוט</span>
                     </div>
-                    <div class="absolute top-[48%] left-[-6%] float-4 bg-white p-3 rounded-2xl shadow-lg border-2 border-slate-800 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-slate-800 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="zap" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">ERP Integration</span>
+                    <div class="satellite-node absolute top-[50%] left-[-5%] md:left-[-6%] float-4 bg-white p-2 md:p-3 rounded-2xl shadow-lg border-2 border-slate-200 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-slate-800 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="zap" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">ERP Integration</span>
                     </div>
-                    <div class="absolute bottom-[22%] right-[5%] float-1 bg-white p-3 rounded-2xl shadow-lg border-2 border-pink-50 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-pink-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="mail" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">שיווק ודיוור</span>
+                    <div class="satellite-node absolute bottom-[25%] right-[0%] md:right-[5%] float-1 bg-white p-2 md:p-3 rounded-2xl shadow-lg border-2 border-pink-50 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-pink-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="mail" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">שיווק ודיוור</span>
                     </div>
-                    <div class="absolute bottom-[22%] left-[5%] float-3 bg-white p-3 rounded-2xl shadow-lg border-2 border-blue-50 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-blue-400 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="truck" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">שילוח ונהגים</span>
+                    <div class="satellite-node absolute bottom-[25%] left-[0%] md:left-[5%] float-3 bg-white p-2 md:p-3 rounded-2xl shadow-lg border-2 border-blue-50 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-blue-400 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="truck" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">שילוח ונהגים</span>
                     </div>
-                    <div class="absolute bottom-[8%] right-[28%] float-2 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-purple-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="database" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">CRM ונתונים</span>
+                    <div class="satellite-node absolute bottom-[8%] right-[20%] md:right-[28%] float-2 bg-white p-2 md:p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-purple-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="database" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">CRM ונתונים</span>
                     </div>
-                    <div class="absolute bottom-[10%] left-[18%] float-1 bg-white p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-3">
-                        <div class="w-8 h-8 bg-red-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="bar-chart-3" class="w-4 h-4"></i></div>
-                        <span class="font-black text-xs">BI ודו"חות</span>
+                    <div class="satellite-node absolute bottom-[10%] left-[15%] md:left-[18%] float-1 bg-white p-2 md:p-3 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2 md:gap-3">
+                        <div class="node-icon w-6 h-6 md:w-8 md:h-8 bg-red-500 text-white rounded-lg flex items-center justify-center font-black"><i data-lucide="bar-chart-3" class="w-3 h-3 md:w-4 md:h-4"></i></div>
+                        <span class="node-text font-black text-[11px] md:text-xs">BI ודו"חות</span>
                     </div>
                 </div>
             </div>
@@ -256,8 +277,8 @@
     <!-- Capabilities Grid -->
     <section id="modules" class="py-24 bg-white text-right">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-black mb-4 italic text-slate-900 uppercase tracking-tighter">The 2026 Backbone Ecosystem</h2>
-            <p class="text-slate-500 font-bold mb-16">ארגז הכלים שלכם לשליטה מלאה בעסק:</p>
+            <h2 class="text-4xl font-black mb-4 italic text-slate-900 uppercase tracking-tighter text-center">The 2026 Backbone Ecosystem</h2>
+            <p class="text-slate-500 font-bold mb-16 text-center">ארגז הכלים שלכם לשליטה מלאה בעסק:</p>
 
             <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-right">
                 <div class="p-8 rounded-3xl feature-grid-item text-center">
@@ -313,7 +334,7 @@
                 <form id="partnershipForm" class="space-y-8">
                     <div class="grid md:grid-cols-2 gap-8 text-right">
                         <div class="space-y-2">
-                            <label class="font-black text-slate-700 pr-2 block">שם מלא / שם חברה</label>
+                            <label class="font-black text-slate-700 pr-2 block">שם מלא</label>
                             <input type="text" required name="full_name" class="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 outline-none transition-all font-bold text-right" placeholder="ישראל ישראלי">
                         </div>
                         <div class="space-y-2">
@@ -321,9 +342,15 @@
                             <input type="tel" required name="phone" class="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 outline-none transition-all font-bold text-right" placeholder="05x-xxxxxxx">
                         </div>
                     </div>
-                    <div class="space-y-2 text-right">
-                        <label class="font-black text-slate-700 pr-2 block">אימייל עסקי</label>
-                        <input type="email" required name="email" class="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 outline-none transition-all font-bold text-right" placeholder="office@company.com">
+                    <div class="grid md:grid-cols-2 gap-8 text-right">
+                        <div class="space-y-2">
+                            <label class="font-black text-slate-700 pr-2 block">אימייל עסקי</label>
+                            <input type="email" required name="email" class="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 outline-none transition-all font-bold text-right" placeholder="office@company.com">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="font-black text-slate-700 pr-2 block text-right">שם חברה</label>
+                            <input type="text" required name="company_name" class="w-full px-6 py-5 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-blue-500 outline-none transition-all font-bold text-right" placeholder="חברת פלוני אלמוני">
+                        </div>
                     </div>
                     <div class="space-y-4 text-right">
                         <label class="font-black text-slate-700 block pr-2">תחומי התמחות:</label>
@@ -392,17 +419,13 @@
         const successMessage = document.getElementById('successMessage');
         const submitBtn = document.getElementById('submitBtn');
 
-        // Embedded Google Apps Script URL
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwmZuvl1t6DO6bKACLaYi2JsWyLt1hq6hPQHXkcNRCf-Itag-7uADoSb3_HdS5lSFwOpg/exec';
 
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            
             submitBtn.disabled = true;
             submitBtn.innerHTML = 'שולח...';
-
             const formData = new FormData(form);
-            
             fetch(scriptURL, { method: 'POST', body: formData})
                 .then(response => {
                     formContainer.classList.add('hidden');
@@ -411,8 +434,6 @@
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
-                    // Show success state even if there's a connectivity error to maintain UX, 
-                    // though with a real URL this should work fine.
                     formContainer.classList.add('hidden');
                     successMessage.classList.remove('hidden');
                 });
